@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.33">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2026-04-17">
+<meta name="description" content="Análise nacional da cobertura do Autodiagnóstico de Saberes Digitais (AVAMEC/MEC), cruzando dados da API pública do AVAMEC com o Censo Escolar 2025 do INEP.">
+
+<title>Engajamento Docente no Autodiagnóstico de Saberes Digitais — Brasil 2025 – Beatriz Lobato | Análise de Dados Educacionais</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./favicon.png" rel="icon" type="image/png">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-6d4e4c6c342646cac9792aff734a6985.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-158031087360bce0ff56dc785ce39e06.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Beatriz Lobato | Análise de Dados Educacionais</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">Início</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./projetos.html"> 
+<span class="menu-text">Projetos</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/BeatrizLobato"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/beatriz-lobato-9219018a/"> <i class="bi bi-linkedin" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Nesta página</h2>
+   
+  <ul>
+  <li><a href="#contexto" id="toc-contexto" class="nav-link active" data-scroll-target="#contexto">Contexto</a></li>
+  <li><a href="#problema" id="toc-problema" class="nav-link" data-scroll-target="#problema">Problema</a></li>
+  <li><a href="#metodologia" id="toc-metodologia" class="nav-link" data-scroll-target="#metodologia">Metodologia</a></li>
+  <li><a href="#resultados" id="toc-resultados" class="nav-link" data-scroll-target="#resultados">Resultados</a>
+  <ul class="collapse">
+  <li><a href="#nenhum-estado-atingiu-a-meta-de-70" id="toc-nenhum-estado-atingiu-a-meta-de-70" class="nav-link" data-scroll-target="#nenhum-estado-atingiu-a-meta-de-70">Nenhum estado atingiu a meta de 70%</a></li>
+  <li><a href="#mapa-interativo-de-cobertura" id="toc-mapa-interativo-de-cobertura" class="nav-link" data-scroll-target="#mapa-interativo-de-cobertura">Mapa interativo de cobertura</a></li>
+  <li><a href="#engajamento-vem-da-rede-estadual-com-exceções" id="toc-engajamento-vem-da-rede-estadual-com-exceções" class="nav-link" data-scroll-target="#engajamento-vem-da-rede-estadual-com-exceções">Engajamento vem da rede estadual — com exceções</a></li>
+  <li><a href="#composição-de-respostas-por-rede" id="toc-composição-de-respostas-por-rede" class="nav-link" data-scroll-target="#composição-de-respostas-por-rede">Composição de respostas por rede</a></li>
+  <li><a href="#cobertura-estadual-municipal" id="toc-cobertura-estadual-municipal" class="nav-link" data-scroll-target="#cobertura-estadual-municipal">Cobertura estadual × municipal</a></li>
+  <li><a href="#concentração-geográfica" id="toc-concentração-geográfica" class="nav-link" data-scroll-target="#concentração-geográfica">Concentração geográfica</a></li>
+  </ul></li>
+  <li><a href="#conclusões" id="toc-conclusões" class="nav-link" data-scroll-target="#conclusões">Conclusões</a></li>
+  <li><a href="#código" id="toc-código" class="nav-link" data-scroll-target="#código">Código</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Engajamento Docente no Autodiagnóstico de Saberes Digitais — Brasil 2025</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Python</div>
+    <div class="quarto-category">Educação</div>
+    <div class="quarto-category">Políticas Públicas</div>
+    <div class="quarto-category">API</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    Análise nacional da cobertura do Autodiagnóstico de Saberes Digitais (AVAMEC/MEC), cruzando dados da API pública do AVAMEC com o Censo Escolar 2025 do INEP.
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">April 17, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="contexto" class="level2">
+<h2 class="anchored" data-anchor-id="contexto">Contexto</h2>
+<p>A Política Nacional de Educação Digital (Lei nº 14.533/2023) estabelece como estratégia prioritária a promoção de ferramentas de autodiagnóstico de competências digitais para profissionais da educação. Em resposta, o Ministério da Educação disponibilizou o <strong>Autodiagnóstico de Saberes Digitais Docentes</strong> na plataforma AVAMEC — um questionário de 17 perguntas distribuídas em três dimensões: Ensino e Aprendizagem, Cidadania Digital e Desenvolvimento Profissional.</p>
+<p>O MEC só libera o relatório detalhado (com dados individuais por professor) quando <strong>70% dos docentes de uma rede</strong> respondem ao questionário. Essa condição torna o monitoramento do engajamento uma questão estratégica para secretarias de educação e parceiros técnicos.</p>
+</section>
+<section id="problema" class="level2">
+<h2 class="anchored" data-anchor-id="problema">Problema</h2>
+<p>Nenhum painel público consolida a taxa de cobertura real por estado — ou seja, <strong>quantos professores já responderam em relação ao total de docentes da rede</strong>. As secretarias só conseguem ver o número bruto de respostas, sem o denominador.</p>
+</section>
+<section id="metodologia" class="level2">
+<h2 class="anchored" data-anchor-id="metodologia">Metodologia</h2>
+<p>Os dados foram coletados diretamente da <strong>API pública do AVAMEC</strong> via webscraping — a mesma API que alimenta o painel oficial. Os endpoints foram identificados por inspeção das requisições HTTP no DevTools do navegador (engenharia reversa de API web), técnica que permite automatizar o que o painel faz manualmente.</p>
+<p>Os IDs dos estados foram validados consultando o endpoint <code>/estado/lista</code> da própria API, garantindo que cada estado fosse consultado com o identificador correto.</p>
+<p>Para calcular a <strong>taxa de cobertura real</strong>, os dados do AVAMEC foram cruzados com o <strong>Censo Escolar 2025 (INEP)</strong>, combinando a <code>Tabela_Escola_2025</code> (localização e dependência administrativa) com a <code>Tabela_Docente_2025</code> (quantidade de docentes por escola) pelo código de entidade (<code>CO_ENTIDADE</code>).</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Nota metodológica:</strong> O denominador utilizado é a soma de <code>QT_DOC_BAS</code> por escola — mesma metodologia adotada pelo INEP em seus relatórios públicos. Esse indicador contabiliza vínculos docentes, não professores únicos, podendo superestimar levemente o total. A taxa de cobertura real é, portanto, uma estimativa conservadora.</p>
+</div>
+</div>
+<p><strong>Fontes:</strong></p>
+<ul>
+<li>API pública AVAMEC: <code>avamec.mec.gov.br/ava-mec-ws/sistema</code></li>
+<li>Censo Escolar 2025: <a href="https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/microdados/censo-escolar">dados.gov.br/inep</a></li>
+</ul>
+</section>
+<section id="resultados" class="level2">
+<h2 class="anchored" data-anchor-id="resultados">Resultados</h2>
+<section id="nenhum-estado-atingiu-a-meta-de-70" class="level3">
+<h3 class="anchored" data-anchor-id="nenhum-estado-atingiu-a-meta-de-70">Nenhum estado atingiu a meta de 70%</h3>
+<p>A taxa de cobertura nacional é de aproximadamente <strong>4%</strong> — o Brasil coletou cerca de 94 mil respostas de um universo estimado de 2,3 milhões de vínculos docentes na educação básica pública.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="ranking_estados.png" class="img-fluid figure-img"></p>
+<figcaption>Taxa de cobertura por estado.</figcaption>
+</figure>
+</div>
+<p><strong>MS lidera com 22,4%</strong> — resultado expressivo considerando o contexto nacional, mas ainda distante dos 70% necessários para liberar o relatório detalhado. PE (19,3%) e RN (18,8%) surpreendem positivamente para o Nordeste.</p>
+<p>O <strong>Sudeste é a região com menor cobertura (2,7%)</strong>, resultado paradoxal dado o tamanho e os recursos das redes de SP, RJ e MG. Isso sugere que o engajamento depende mais de mobilização ativa das secretarias do que de capacidade institucional.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="cobertura_por_regiao.png" class="img-fluid figure-img"></p>
+<figcaption>Cobertura por região.</figcaption>
+</figure>
+</div>
+</section>
+<section id="mapa-interativo-de-cobertura" class="level3">
+<h3 class="anchored" data-anchor-id="mapa-interativo-de-cobertura">Mapa interativo de cobertura</h3>
+<iframe src="mapa_cobertura.html" width="100%" height="550px" frameborder="0" style="border-radius:8px;"></iframe>
+</section>
+<section id="engajamento-vem-da-rede-estadual-com-exceções" class="level3">
+<h3 class="anchored" data-anchor-id="engajamento-vem-da-rede-estadual-com-exceções">Engajamento vem da rede estadual — com exceções</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="desequilibrio_redes.png" class="img-fluid figure-img"></p>
+<figcaption>Diferença entre cobertura da rede estadual e municipal por estado.</figcaption>
+</figure>
+</div>
+<p>Na maioria dos estados onde o engajamento é mais alto, ele é liderado pela <strong>secretaria estadual</strong> — PE (+45 p.p.) e MS (+35 p.p.) são os exemplos mais expressivos. Isso indica que a mobilização top-down da secretaria estadual é o principal vetor de adesão.</p>
+<p><strong>RN é a exceção mais interessante:</strong> é o único estado com a rede municipal significativamente mais engajada que a estadual (-12 p.p.), sugerindo uma dinâmica de mobilização vinda dos municípios, não do estado.</p>
+</section>
+<section id="composição-de-respostas-por-rede" class="level3">
+<h3 class="anchored" data-anchor-id="composição-de-respostas-por-rede">Composição de respostas por rede</h3>
+<iframe src="composicao_redes.html" width="100%" height="700px" frameborder="0" style="border-radius:8px;"></iframe>
+</section>
+<section id="cobertura-estadual-municipal" class="level3">
+<h3 class="anchored" data-anchor-id="cobertura-estadual-municipal">Cobertura estadual × municipal</h3>
+<iframe src="scatter_redes.html" width="100%" height="600px" frameborder="0" style="border-radius:8px;"></iframe>
+</section>
+<section id="concentração-geográfica" class="level3">
+<h3 class="anchored" data-anchor-id="concentração-geográfica">Concentração geográfica</h3>
+<p>Em estados como DF (100%) e GO (79%), quase todas as respostas vêm dos 10% de municípios mais ativos. MS é o estado mais distribuído (43%), com engajamento espalhado pelos seus 79 municípios.</p>
+<iframe src="concentracao_municipios.html" width="100%" height="450px" frameborder="0" style="border-radius:8px;"></iframe>
+</section>
+</section>
+<section id="conclusões" class="level2">
+<h2 class="anchored" data-anchor-id="conclusões">Conclusões</h2>
+<ol type="1">
+<li><p><strong>O Brasil está muito longe da meta:</strong> com 4% de cobertura nacional, nenhum estado está próximo de liberar o relatório detalhado do MEC.</p></li>
+<li><p><strong>Mobilização institucional importa mais que capacidade:</strong> o Sudeste, região mais rica, tem a menor cobertura. MS e PE, com mobilização ativa das secretarias estaduais, lideram.</p></li>
+<li><p><strong>A rede municipal é invisível na maioria dos estados:</strong> a participação municipal é baixa em quase todos os estados, exceto RN e SP — lacuna importante dado que a rede municipal responde por grande parte dos docentes brasileiros.</p></li>
+<li><p><strong>Monitoramento contínuo é viável:</strong> a API pública do AVAMEC permite coleta automatizada e periódica. Com snapshots mensais, é possível acompanhar a velocidade de engajamento e projetar quando cada estado atingirá a meta.</p></li>
+</ol>
+</section>
+<section id="código" class="level2">
+<h2 class="anchored" data-anchor-id="código">Código</h2>
+<p>Os notebooks estão disponíveis no <a href="https://github.com/beatrizlobato/portfolio-dados-educacao">GitHub</a>:</p>
+<ul>
+<li><code>01_coleta.ipynb</code> — coleta nacional via API AVAMEC</li>
+<li><code>02_mapa_engajamento.ipynb</code> — taxa de cobertura por estado e região</li>
+<li><code>03_desigualdade_redes.ipynb</code> — comparação entre redes estadual e municipal</li>
+</ul>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

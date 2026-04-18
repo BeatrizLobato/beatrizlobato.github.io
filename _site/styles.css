@@ -1,0 +1,55 @@
+/* Cores Vértice */
+:root {
+  --cor-terracota: #C0603A;
+  --cor-slate: #4A6FA5;
+  --cor-creme: #F5F0EA;
+  --cor-grafite: #3A3A3A;
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--cor-grafite) !important;
+  border-bottom: 3px solid var(--cor-terracota);
+}
+
+.navbar-brand, .nav-link {
+  color: white !important;
+}
+
+.nav-link:hover {
+  color: var(--cor-terracota) !important;
+}
+
+/* Títulos */
+h1, h2, h3 {
+  color: var(--cor-grafite);
+}
+
+h2 {
+  border-bottom: 2px solid var(--cor-terracota);
+  padding-bottom: 6px;
+}
+
+/* Links */
+a {
+  color: var(--cor-slate);
+}
+
+a:hover {
+  color: var(--cor-terracota);
+}
+
+/* Fundo geral */
+body {
+  background-color: var(--cor-creme);
+  color: var(--cor-grafite);
+}
+
+/* TOC */
+#TOC a {
+  color: var(--cor-slate);
+}
+
+#TOC a:hover {
+  color: var(--cor-terracota);
+}

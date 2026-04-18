@@ -1,0 +1,184 @@
+[
+  {
+    "objectID": "analise_tic_docentes.html",
+    "href": "analise_tic_docentes.html",
+    "title": "Especialização docente em TIC no Brasil",
+    "section": "",
+    "text": "No cenário atual, em que estudantes chegam às salas de aula já imersos em inteligência artificial, redes sociais e ferramentas digitais, a formação docente em tecnologia deixou de ser diferencial para se tornar necessidade. Professores precisam não apenas usar ferramentas digitais, mas compreendê-las criticamente — para ensinar com elas, sobre elas e a partir delas. Sem formação específica, o risco é que a escola fique para trás numa transformação que já acontece fora dela.\nNesse cenário, mapear quem tem e quem não tem essa formação é o primeiro passo para orientar políticas públicas de desenvolvimento de competências digitais docentes.\nDado central: apenas 0,80% dos professores brasileiros têm especialização em tecnologia educacional — um gap expressivo diante da crescente digitalização da educação pública."
+  },
+  {
+    "objectID": "analise_tic_docentes.html#contexto",
+    "href": "analise_tic_docentes.html#contexto",
+    "title": "Especialização docente em TIC no Brasil",
+    "section": "",
+    "text": "No cenário atual, em que estudantes chegam às salas de aula já imersos em inteligência artificial, redes sociais e ferramentas digitais, a formação docente em tecnologia deixou de ser diferencial para se tornar necessidade. Professores precisam não apenas usar ferramentas digitais, mas compreendê-las criticamente — para ensinar com elas, sobre elas e a partir delas. Sem formação específica, o risco é que a escola fique para trás numa transformação que já acontece fora dela.\nNesse cenário, mapear quem tem e quem não tem essa formação é o primeiro passo para orientar políticas públicas de desenvolvimento de competências digitais docentes.\nDado central: apenas 0,80% dos professores brasileiros têm especialização em tecnologia educacional — um gap expressivo diante da crescente digitalização da educação pública."
+  },
+  {
+    "objectID": "analise_tic_docentes.html#formação-em-tic-por-estado",
+    "href": "analise_tic_docentes.html#formação-em-tic-por-estado",
+    "title": "Especialização docente em TIC no Brasil",
+    "section": "Formação em TIC por estado",
+    "text": "Formação em TIC por estado\n\nO ranking revela uma desigualdade expressiva: Santa Catarina lidera com 2,61% — quase quatro vezes a média nacional de 0,8%. No extremo oposto, Tocantins registra apenas 0,26%. Chama atenção a presença de estados do Nordeste e Norte no topo — como Bahia (2,38%) e Rondônia (2,09%) — enquanto grandes redes do Sudeste, como São Paulo (0,35%), MG (0,34%) e RJ (0,32%), ficam bem abaixo da média nacional."
+  },
+  {
+    "objectID": "analise_tic_docentes.html#padrão-regional",
+    "href": "analise_tic_docentes.html#padrão-regional",
+    "title": "Especialização docente em TIC no Brasil",
+    "section": "Padrão regional",
+    "text": "Padrão regional\n\nO recorte regional desfaz uma suposição comum: o Sudeste, maior e mais rico, fica em último lugar com apenas 0,43% — menos da metade da média nacional. O Sul lidera (1,19%), seguido de Nordeste (1,06%) e Centro-Oeste (1,04%). Isso sugere que o tamanho da rede não favorece necessariamente a especialização — ao contrário, pode diluí-la."
+  },
+  {
+    "objectID": "analise_tic_docentes.html#dupla-vulnerabilidade",
+    "href": "analise_tic_docentes.html#dupla-vulnerabilidade",
+    "title": "Especialização docente em TIC no Brasil",
+    "section": "Dupla vulnerabilidade",
+    "text": "Dupla vulnerabilidade\n\nO scatter revela os estados em situação mais crítica: aqueles com baixa especialização em TIC e alto percentual de professores sem nenhuma especialização — uma vulnerabilidade dupla. São Paulo se destaca negativamente nesse quadrante: apesar do tamanho e dos recursos, combina baixa formação em TIC com altíssima proporção de docentes sem especialização alguma (80%). No quadrante oposto, referências como Espírito Santo e Santa Catarina mostram que é possível ter alta formação em TIC com baixa ausência de especialização."
+  },
+  {
+    "objectID": "analise_tic_docentes.html#fonte-e-metodologia",
+    "href": "analise_tic_docentes.html#fonte-e-metodologia",
+    "title": "Especialização docente em TIC no Brasil",
+    "section": "Fonte e metodologia",
+    "text": "Fonte e metodologia\nDados: Censo Escolar 2025 — INEP\nFerramentas: Python, pandas, matplotlib\nCódigo: GitHub"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Beatriz Lobato | Análise de Dados Educacionais",
+    "section": "",
+    "text": "Gestora de projetos educacionais com crescente atuação em análise de dados. Trabalho na interseção entre política educacional, gestão e dados — apoiando redes públicas de ensino com evidências para tomada de decisão.\nTenho experiência em projetos de formação docente, avaliação de redes municipais e estaduais, e análise de indicadores educacionais como IDEB, INSE e Censo Escolar.\nEste portfólio reúne análises autorais com dados abertos, desenvolvidas com Python e visualização de dados.\nÁreas de atuação"
+  },
+  {
+    "objectID": "index.html#projetos",
+    "href": "index.html#projetos",
+    "title": "Beatriz Lobato | Análise de Dados Educacionais",
+    "section": "Projetos",
+    "text": "Projetos\n\nDesigualdade educacional nos municípios brasileiros\nEspecialização docente em TIC no Brasil"
+  },
+  {
+    "objectID": "analise_ideb_inse.html#onde-está-o-problema",
+    "href": "analise_ideb_inse.html#onde-está-o-problema",
+    "title": "Desigualdade educacional nos municípios brasileiros",
+    "section": "Onde está o problema?",
+    "text": "Onde está o problema?\nO mapa abaixo mostra o IDEB 2023 dos anos iniciais da rede pública por município. A desigualdade geográfica é imediata: Norte e Nordeste concentram os piores desempenhos, enquanto Sul e Sudeste lideram."
+  },
+  {
+    "objectID": "analise_ideb_inse.html#por-que-existe",
+    "href": "analise_ideb_inse.html#por-que-existe",
+    "title": "Desigualdade educacional nos municípios brasileiros",
+    "section": "Por que existe?",
+    "text": "Por que existe?\nA correlação entre nível socioeconômico (INSE) e desempenho escolar (IDEB) é moderada-forte (r = 0.55). Municípios mais ricos tendem a ter melhores resultados — mas a relação não é determinista. Há municípios pobres com IDEB alto, e municípios ricos com IDEB baixo."
+  },
+  {
+    "objectID": "analise_ideb_inse.html#quem-foge-do-padrão",
+    "href": "analise_ideb_inse.html#quem-foge-do-padrão",
+    "title": "Desigualdade educacional nos municípios brasileiros",
+    "section": "Quem foge do padrão?",
+    "text": "Quem foge do padrão?\nO mapa abaixo mostra o resíduo de cada município — a diferença entre o IDEB observado e o IDEB esperado dado o seu nível socioeconômico. Verde indica municípios que performam acima do esperado; vermelho, abaixo."
+  },
+  {
+    "objectID": "analise_ideb_inse.html#o-efeito-varia-por-região",
+    "href": "analise_ideb_inse.html#o-efeito-varia-por-região",
+    "title": "Desigualdade educacional nos municípios brasileiros",
+    "section": "O efeito varia por região?",
+    "text": "O efeito varia por região?\nDentro do Nordeste, o INSE praticamente não explica o IDEB (r = -0.01) — municípios pobres e ricos performam de forma parecida. Isso é o efeito de políticas educacionais municipais como o PAIC no Ceará, que conseguiram quebrar a determinação socioeconômica. No Norte, a correlação é a mais forte (r = 0.53), sugerindo que políticas locais ainda não conseguiram fazer essa ruptura."
+  },
+  {
+    "objectID": "analise_avamec_2025.html",
+    "href": "analise_avamec_2025.html",
+    "title": "Engajamento Docente no Autodiagnóstico de Saberes Digitais — Brasil 2025",
+    "section": "",
+    "text": "A Política Nacional de Educação Digital (Lei nº 14.533/2023) estabelece como estratégia prioritária a promoção de ferramentas de autodiagnóstico de competências digitais para profissionais da educação. Em resposta, o Ministério da Educação disponibilizou o Autodiagnóstico de Saberes Digitais Docentes na plataforma AVAMEC — um questionário de 17 perguntas distribuídas em três dimensões: Ensino e Aprendizagem, Cidadania Digital e Desenvolvimento Profissional.\nO MEC só libera o relatório detalhado (com dados individuais por professor) quando 70% dos docentes de uma rede respondem ao questionário. Essa condição torna o monitoramento do engajamento uma questão estratégica para secretarias de educação e parceiros técnicos."
+  },
+  {
+    "objectID": "analise_avamec_2025.html#contexto",
+    "href": "analise_avamec_2025.html#contexto",
+    "title": "Engajamento Docente no Autodiagnóstico de Saberes Digitais — Brasil 2025",
+    "section": "",
+    "text": "A Política Nacional de Educação Digital (Lei nº 14.533/2023) estabelece como estratégia prioritária a promoção de ferramentas de autodiagnóstico de competências digitais para profissionais da educação. Em resposta, o Ministério da Educação disponibilizou o Autodiagnóstico de Saberes Digitais Docentes na plataforma AVAMEC — um questionário de 17 perguntas distribuídas em três dimensões: Ensino e Aprendizagem, Cidadania Digital e Desenvolvimento Profissional.\nO MEC só libera o relatório detalhado (com dados individuais por professor) quando 70% dos docentes de uma rede respondem ao questionário. Essa condição torna o monitoramento do engajamento uma questão estratégica para secretarias de educação e parceiros técnicos."
+  },
+  {
+    "objectID": "analise_avamec_2025.html#problema",
+    "href": "analise_avamec_2025.html#problema",
+    "title": "Engajamento Docente no Autodiagnóstico de Saberes Digitais — Brasil 2025",
+    "section": "Problema",
+    "text": "Problema\nNenhum painel público consolida a taxa de cobertura real por estado — ou seja, quantos professores já responderam em relação ao total de docentes da rede. As secretarias só conseguem ver o número bruto de respostas, sem o denominador."
+  },
+  {
+    "objectID": "analise_avamec_2025.html#metodologia",
+    "href": "analise_avamec_2025.html#metodologia",
+    "title": "Engajamento Docente no Autodiagnóstico de Saberes Digitais — Brasil 2025",
+    "section": "Metodologia",
+    "text": "Metodologia\nOs dados foram coletados diretamente da API pública do AVAMEC via webscraping — a mesma API que alimenta o painel oficial. Os endpoints foram identificados por inspeção das requisições HTTP no DevTools do navegador (engenharia reversa de API web), técnica que permite automatizar o que o painel faz manualmente.\nOs IDs dos estados foram validados consultando o endpoint /estado/lista da própria API, garantindo que cada estado fosse consultado com o identificador correto.\nPara calcular a taxa de cobertura real, os dados do AVAMEC foram cruzados com o Censo Escolar 2025 (INEP), combinando a Tabela_Escola_2025 (localização e dependência administrativa) com a Tabela_Docente_2025 (quantidade de docentes por escola) pelo código de entidade (CO_ENTIDADE).\n\n\n\n\n\n\nNote\n\n\n\nNota metodológica: O denominador utilizado é a soma de QT_DOC_BAS por escola — mesma metodologia adotada pelo INEP em seus relatórios públicos. Esse indicador contabiliza vínculos docentes, não professores únicos, podendo superestimar levemente o total. A taxa de cobertura real é, portanto, uma estimativa conservadora.\n\n\nFontes:\n\nAPI pública AVAMEC: avamec.mec.gov.br/ava-mec-ws/sistema\nCenso Escolar 2025: dados.gov.br/inep"
+  },
+  {
+    "objectID": "analise_avamec_2025.html#resultados",
+    "href": "analise_avamec_2025.html#resultados",
+    "title": "Engajamento Docente no Autodiagnóstico de Saberes Digitais — Brasil 2025",
+    "section": "Resultados",
+    "text": "Resultados\n\nNenhum estado atingiu a meta de 70%\nA taxa de cobertura nacional é de aproximadamente 4% — o Brasil coletou cerca de 94 mil respostas de um universo estimado de 2,3 milhões de vínculos docentes na educação básica pública.\n\n\n\nTaxa de cobertura por estado.\n\n\nMS lidera com 22,4% — resultado expressivo considerando o contexto nacional, mas ainda distante dos 70% necessários para liberar o relatório detalhado. PE (19,3%) e RN (18,8%) surpreendem positivamente para o Nordeste.\nO Sudeste é a região com menor cobertura (2,7%), resultado paradoxal dado o tamanho e os recursos das redes de SP, RJ e MG. Isso sugere que o engajamento depende mais de mobilização ativa das secretarias do que de capacidade institucional.\n\n\n\nCobertura por região.\n\n\n\n\nMapa interativo de cobertura\n\n\n\nEngajamento vem da rede estadual — com exceções\n\n\n\nDiferença entre cobertura da rede estadual e municipal por estado.\n\n\nNa maioria dos estados onde o engajamento é mais alto, ele é liderado pela secretaria estadual — PE (+45 p.p.) e MS (+35 p.p.) são os exemplos mais expressivos. Isso indica que a mobilização top-down da secretaria estadual é o principal vetor de adesão.\nRN é a exceção mais interessante: é o único estado com a rede municipal significativamente mais engajada que a estadual (-12 p.p.), sugerindo uma dinâmica de mobilização vinda dos municípios, não do estado.\n\n\nComposição de respostas por rede\n\n\n\nCobertura estadual × municipal\n\n\n\nConcentração geográfica\nEm estados como DF (100%) e GO (79%), quase todas as respostas vêm dos 10% de municípios mais ativos. MS é o estado mais distribuído (43%), com engajamento espalhado pelos seus 79 municípios."
+  },
+  {
+    "objectID": "analise_avamec_2025.html#conclusões",
+    "href": "analise_avamec_2025.html#conclusões",
+    "title": "Engajamento Docente no Autodiagnóstico de Saberes Digitais — Brasil 2025",
+    "section": "Conclusões",
+    "text": "Conclusões\n\nO Brasil está muito longe da meta: com 4% de cobertura nacional, nenhum estado está próximo de liberar o relatório detalhado do MEC.\nMobilização institucional importa mais que capacidade: o Sudeste, região mais rica, tem a menor cobertura. MS e PE, com mobilização ativa das secretarias estaduais, lideram.\nA rede municipal é invisível na maioria dos estados: a participação municipal é baixa em quase todos os estados, exceto RN e SP — lacuna importante dado que a rede municipal responde por grande parte dos docentes brasileiros.\nMonitoramento contínuo é viável: a API pública do AVAMEC permite coleta automatizada e periódica. Com snapshots mensais, é possível acompanhar a velocidade de engajamento e projetar quando cada estado atingirá a meta."
+  },
+  {
+    "objectID": "analise_avamec_2025.html#código",
+    "href": "analise_avamec_2025.html#código",
+    "title": "Engajamento Docente no Autodiagnóstico de Saberes Digitais — Brasil 2025",
+    "section": "Código",
+    "text": "Código\nOs notebooks estão disponíveis no GitHub:\n\n01_coleta.ipynb — coleta nacional via API AVAMEC\n02_mapa_engajamento.ipynb — taxa de cobertura por estado e região\n03_desigualdade_redes.ipynb — comparação entre redes estadual e municipal"
+  },
+  {
+    "objectID": "projetos.html",
+    "href": "projetos.html",
+    "title": "Projetos",
+    "section": "",
+    "text": "Quanto do desempenho escolar é explicado pelo nível socioeconômico?\nAnálise cruzando o IDEB 2023 com o Indicador de Nível Socioeconômico (INSE) do SAEB para todos os municípios brasileiros com dados disponíveis.\nDados: INEP — IDEB 2023, INSE SAEB 2023\nFerramentas: Python, pandas, matplotlib, geopandas\nStatus: Em desenvolvimento\nVer análise"
+  },
+  {
+    "objectID": "projetos.html#desigualdade-educacional-nos-municípios-brasileiros",
+    "href": "projetos.html#desigualdade-educacional-nos-municípios-brasileiros",
+    "title": "Projetos",
+    "section": "",
+    "text": "Quanto do desempenho escolar é explicado pelo nível socioeconômico?\nAnálise cruzando o IDEB 2023 com o Indicador de Nível Socioeconômico (INSE) do SAEB para todos os municípios brasileiros com dados disponíveis.\nDados: INEP — IDEB 2023, INSE SAEB 2023\nFerramentas: Python, pandas, matplotlib, geopandas\nStatus: Em desenvolvimento\nVer análise"
+  },
+  {
+    "objectID": "projetos.html#especialização-docente-em-tic-no-brasil",
+    "href": "projetos.html#especialização-docente-em-tic-no-brasil",
+    "title": "Projetos",
+    "section": "Especialização docente em TIC no Brasil",
+    "text": "Especialização docente em TIC no Brasil\nApenas 0,80% dos professores brasileiros têm especialização em tecnologia educacional.\nAnálise do Censo Escolar 2025 mapeando a distribuição de docentes com especialização em TIC em todos os 26 estados e o Distrito Federal — e investigando padrões regionais que desafiam suposições comuns.\nDados: Censo Escolar 2025 — INEP\nFerramentas: Python, pandas, matplotlib\nStatus: Concluído"
+  },
+  {
+    "objectID": "projetos.html#ver-análise",
+    "href": "projetos.html#ver-análise",
+    "title": "Projetos",
+    "section": "Ver análise",
+    "text": "Ver análise"
+  },
+  {
+    "objectID": "projetos.html#engajamento-docente-no-autodiagnóstico-de-saberes-digitais-brasil-2025",
+    "href": "projetos.html#engajamento-docente-no-autodiagnóstico-de-saberes-digitais-brasil-2025",
+    "title": "Projetos",
+    "section": "Engajamento Docente no Autodiagnóstico de Saberes Digitais — Brasil 2025",
+    "text": "Engajamento Docente no Autodiagnóstico de Saberes Digitais — Brasil 2025\nNenhum estado brasileiro atingiu a meta de 70% de cobertura exigida pelo MEC.\nAnálise nacional cruzando dados da API pública do AVAMEC com o Censo Escolar 2025 do INEP para calcular a taxa de cobertura real do Autodiagnóstico de Saberes Digitais em todos os 27 estados — e investigando desigualdades entre redes estadual e municipal.\nDados: API pública AVAMEC, Censo Escolar 2025 — INEP\nFerramentas: Python, pandas, plotly, matplotlib\nStatus: Concluído\nVer análise"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Sobre",
+    "section": "",
+    "text": "Gestora de projetos educacionais com crescente atuação em análise de dados. Trabalho na interseção entre política educacional, gestão e dados — apoiando redes públicas de ensino com evidências para tomada de decisão.\nTenho experiência em projetos de formação docente, avaliação de redes municipais e estaduais, e análise de indicadores educacionais como IDEB, INSE e Censo Escolar.\nEste portfólio reúne análises autorais com dados abertos, desenvolvidas com Python e visualização de dados.\nÁreas de atuação\n\nGestão de projetos educacionais\nAnálise de indicadores educacionais\nAvaliação de programas e políticas públicas\nVisualização de dados educacionais\n\nContato\n\n💼 LinkedIn\n🐙 GitHub"
+  },
+  {
+    "objectID": "about.html#beatriz-lobato",
+    "href": "about.html#beatriz-lobato",
+    "title": "Sobre",
+    "section": "",
+    "text": "Gestora de projetos educacionais com crescente atuação em análise de dados. Trabalho na interseção entre política educacional, gestão e dados — apoiando redes públicas de ensino com evidências para tomada de decisão.\nTenho experiência em projetos de formação docente, avaliação de redes municipais e estaduais, e análise de indicadores educacionais como IDEB, INSE e Censo Escolar.\nEste portfólio reúne análises autorais com dados abertos, desenvolvidas com Python e visualização de dados.\nÁreas de atuação\n\nGestão de projetos educacionais\nAnálise de indicadores educacionais\nAvaliação de programas e políticas públicas\nVisualização de dados educacionais\n\nContato\n\n💼 LinkedIn\n🐙 GitHub"
+  }
+]
