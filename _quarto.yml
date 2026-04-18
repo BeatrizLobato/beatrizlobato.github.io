@@ -1,6 +1,5 @@
 project:
   type: website
-    output-dir: docs
 
 website:
   title: "Beatriz Lobato | Análise de Dados Educacionais"

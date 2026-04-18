@@ -3,3 +3,6 @@ dados/
 _site/
 .DS_Store
 .quarto/
+
+/.quarto/
+**/*.quarto_ipynb
