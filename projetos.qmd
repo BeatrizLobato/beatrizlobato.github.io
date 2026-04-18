@@ -1,0 +1,47 @@
+---
+title: "Projetos"
+---
+
+## Desigualdade educacional nos municípios brasileiros
+
+**Quanto do desempenho escolar é explicado pelo nível socioeconômico?**
+
+Análise cruzando o IDEB 2023 com o Indicador de Nível Socioeconômico (INSE)
+do SAEB para todos os municípios brasileiros com dados disponíveis.
+
+**Dados:** INEP — IDEB 2023, INSE SAEB 2023  
+**Ferramentas:** Python, pandas, matplotlib, geopandas  
+**Status:** Em desenvolvimento
+
+[Ver análise](analise_ideb_inse.html)
+
+---
+
+## Especialização docente em TIC no Brasil
+
+**Apenas 0,80% dos professores brasileiros têm especialização em tecnologia educacional.**
+
+Análise do Censo Escolar 2025 mapeando a distribuição de docentes com especialização 
+em TIC em todos os 26 estados e o Distrito Federal — e investigando padrões regionais 
+que desafiam suposições comuns.
+
+**Dados:** Censo Escolar 2025 — INEP  
+**Ferramentas:** Python, pandas, matplotlib  
+**Status:** Concluído
+
+[Ver análise](analise_tic_docentes.html)
+---
+
+## Engajamento Docente no Autodiagnóstico de Saberes Digitais — Brasil 2025
+
+**Nenhum estado brasileiro atingiu a meta de 70% de cobertura exigida pelo MEC.**
+
+Análise nacional cruzando dados da API pública do AVAMEC com o Censo Escolar 2025
+do INEP para calcular a taxa de cobertura real do Autodiagnóstico de Saberes Digitais
+em todos os 27 estados — e investigando desigualdades entre redes estadual e municipal.
+
+**Dados:** API pública AVAMEC, Censo Escolar 2025 — INEP  
+**Ferramentas:** Python, pandas, plotly, matplotlib  
+**Status:** Concluído
+
+[Ver análise](analise_avamec_2025.html)

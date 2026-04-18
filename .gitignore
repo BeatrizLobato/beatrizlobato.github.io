@@ -1,0 +1,5 @@
+dados/shapefiles/
+dados/
+_site/
+.DS_Store
+.quarto/

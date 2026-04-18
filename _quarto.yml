@@ -1,0 +1,25 @@
+project:
+  type: website
+    output-dir: docs
+
+website:
+  title: "Beatriz Lobato | Análise de Dados Educacionais"
+  favicon: favicon.png
+  navbar:
+    left:
+      - href: index.qmd
+        text: Início
+      - href: projetos.qmd
+        text: Projetos
+    right:
+      - icon: github
+        href: "https://github.com/BeatrizLobato"
+      - icon: linkedin
+        href: "https://www.linkedin.com/in/beatriz-lobato-9219018a/"
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    toc-title: "Nesta página"

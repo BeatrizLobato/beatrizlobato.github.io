@@ -1,0 +1,30 @@
+---
+title: "Beatriz Lobato | Análise de Dados Educacionais"
+page-layout: full
+---
+
+
+
+Gestora de projetos educacionais com crescente atuação em análise de dados. Trabalho 
+na interseção entre política educacional, gestão e dados — apoiando redes públicas de 
+ensino com evidências para tomada de decisão.
+
+Tenho experiência em projetos de formação docente, avaliação de redes municipais e 
+estaduais, e análise de indicadores educacionais como IDEB, INSE e Censo Escolar.
+
+Este portfólio reúne análises autorais com dados abertos, desenvolvidas com Python 
+e visualização de dados.
+
+**Áreas de atuação**
+
+- Gestão de projetos educacionais
+- Análise de indicadores educacionais
+- Avaliação de programas e políticas públicas
+- Visualização de dados educacionais
+
+---
+
+## Projetos
+
+- [Desigualdade educacional nos municípios brasileiros](analise_ideb_inse.html)
+- [Especialização docente em TIC no Brasil](analise_tic_docentes.html)
