@@ -8,14 +8,13 @@ page-layout: full
 
 ::: {.hero-secao}
 
+::: {.hero-conteudo}
 <div class="cluster cluster-grande" aria-hidden="true">
 <div class="forma forma-circulo"></div>
 <div class="forma forma-diamante"></div>
 <div class="forma forma-triangulo"></div>
-<div class="forma forma-estrela"></div>
 </div>
 
-::: {.hero-conteudo}
 <p class="kicker">Gestão de projetos · Análise de dados educacionais</p>
 
 <h1 class="wordmark">Beatriz <span class="sobrenome">Lobato</span></h1>
