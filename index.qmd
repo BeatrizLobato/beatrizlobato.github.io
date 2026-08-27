@@ -1,23 +1,39 @@
 ---
 title: "Beatriz Lobato | Análise de Dados Educacionais"
+title-block-banner: false
 page-layout: full
 ---
 
-::: {.index-hero}
+<style>#title-block-header { display: none; }</style>
 
-Gestora de projetos educacionais com crescente atuação em análise de dados. Trabalho na interseção entre política educacional, gestão e dados — apoiando redes públicas de ensino com evidências para tomada de decisão.
+::: {.hero-secao}
 
-Tenho experiência em projetos de formação docente, avaliação de redes municipais e estaduais, e análise de indicadores educacionais como IDEB, INSE e Censo Escolar.
+<div class="cluster cluster-grande" aria-hidden="true">
+<div class="forma forma-circulo"></div>
+<div class="forma forma-diamante"></div>
+<div class="forma forma-triangulo"></div>
+<div class="forma forma-estrela"></div>
+</div>
 
-Este portfólio reúne análises autorais com dados abertos, desenvolvidas com Python e visualização de dados.
+::: {.hero-conteudo}
+<p class="kicker">Gestão de projetos · Análise de dados educacionais</p>
 
-<div class="index-tags-label">Áreas de atuação</div>
+<h1 class="wordmark">Beatriz <span class="sobrenome">Lobato</span></h1>
 
-::: {.index-tags}
+<p class="bio">Trabalho na interseção entre política educacional, gestão e dados — apoiando redes públicas de ensino com evidências para tomada de decisão. Experiência em formação docente, avaliação de redes municipais e estaduais, e indicadores como IDEB, INSE e Censo Escolar.</p>
+
+<div class="tags-label">Áreas de atuação</div>
+
+::: {.tags}
 <span>Gestão de projetos educacionais</span>
 <span>Análise de indicadores educacionais</span>
 <span>Avaliação de programas e políticas públicas</span>
 <span>Visualização de dados educacionais</span>
 :::
 
+<a class="cta" href="projetos.html">Ver projetos →</a>
 :::
+
+:::
+
+<p class="rodape-credito">Análises com dados públicos — INEP, Censo Escolar, Saeb</p>
