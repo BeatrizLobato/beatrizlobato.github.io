@@ -1,47 +1,70 @@
 ---
 title: "Projetos"
+title-block-banner: false
+page-layout: full
 ---
 
-## Desigualdade educacional nos municípios brasileiros
+<style>#title-block-header { display: none; }</style>
 
-**Quanto do desempenho escolar é explicado pelo nível socioeconômico?**
+::: {.wordmark-hero}
+portfólio
+:::
 
-Análise cruzando o IDEB 2023 com o Indicador de Nível Socioeconômico (INSE)
-do SAEB para todos os municípios brasileiros com dados disponíveis.
+::: {.wordmark-intro}
+<p>Trabalho na interseção entre política educacional, gestão e dados — apoiando redes públicas de ensino com evidências para tomada de decisão.</p>
+<div class="areas">Gestão de projetos · Análise de indicadores<br>Avaliação de políticas · Visualização de dados</div>
+:::
 
-**Dados:** INEP — IDEB 2023, INSE SAEB 2023  
-**Ferramentas:** Python, pandas, matplotlib, geopandas  
-**Status:** Em desenvolvimento
+::: {.projeto-faixa .faixa-1}
+::: {.projeto-faixa-inner}
+::: {.projeto-meta}
+<span class="indice">01 / 03</span>
+:::
 
-[Ver análise](analise_ideb_inse.html)
+::: {.projeto-corpo}
+<h2 class="projeto-titulo">Equidade educacional: Saeb, Censo Escolar e INSE</h2>
 
----
+<div class="projeto-texto">
+<p class="projeto-destaque">Gestão escolar explica desempenho tanto quanto infraestrutura — e é o único achado que se repete em todo o Brasil.</p>
+<p class="projeto-ferramentas">Python · pandas · statsmodels · plotly</p>
+<a class="projeto-link" href="analise_equidade_saeb_2025.html">Ver análise →</a>
+</div>
+:::
+:::
+:::
 
-## Especialização docente em TIC no Brasil
+::: {.projeto-faixa .faixa-2}
+::: {.projeto-faixa-inner}
+::: {.projeto-meta}
+<span class="indice">02 / 03</span>
+:::
 
-**Apenas 0,80% dos professores brasileiros têm especialização em tecnologia educacional.**
+::: {.projeto-corpo}
+<h2 class="projeto-titulo">Desigualdade educacional nos municípios brasileiros</h2>
 
-Análise do Censo Escolar 2025 mapeando a distribuição de docentes com especialização 
-em TIC em todos os 26 estados e o Distrito Federal — e investigando padrões regionais 
-que desafiam suposições comuns.
+<div class="projeto-texto">
+<p class="projeto-destaque">Quanto do desempenho escolar é explicado pelo nível socioeconômico?</p>
+<p class="projeto-ferramentas">Python · pandas · matplotlib · geopandas</p>
+<a class="projeto-link" href="analise_ideb_inse.html">Ver análise →</a>
+</div>
+:::
+:::
+:::
 
-**Dados:** Censo Escolar 2025 — INEP  
-**Ferramentas:** Python, pandas, matplotlib  
-**Status:** Concluído
+::: {.projeto-faixa .faixa-3}
+::: {.projeto-faixa-inner}
+::: {.projeto-meta}
+<span class="indice">03 / 03</span>
+:::
 
-[Ver análise](analise_tic_docentes.html)
----
+::: {.projeto-corpo}
+<h2 class="projeto-titulo">Especialização docente em TIC no Brasil</h2>
 
-## Engajamento Docente no Autodiagnóstico de Saberes Digitais — Brasil 2025
-
-**Nenhum estado brasileiro atingiu a meta de 70% de cobertura exigida pelo MEC.**
-
-Análise nacional cruzando dados da API pública do AVAMEC com o Censo Escolar 2025
-do INEP para calcular a taxa de cobertura real do Autodiagnóstico de Saberes Digitais
-em todos os 27 estados — e investigando desigualdades entre redes estadual e municipal.
-
-**Dados:** API pública AVAMEC, Censo Escolar 2025 — INEP  
-**Ferramentas:** Python, pandas, plotly, matplotlib  
-**Status:** Concluído
-
-[Ver análise](analise_avamec_2025.html)
+<div class="projeto-texto">
+<p class="projeto-destaque">Apenas 0,80% dos professores brasileiros têm especialização em tecnologia educacional.</p>
+<p class="projeto-ferramentas">Python · pandas · matplotlib</p>
+<a class="projeto-link" href="analise_tic_docentes.html">Ver análise →</a>
+</div>
+:::
+:::
+:::
