@@ -6,13 +6,10 @@ page-layout: full
 
 <style>#title-block-header { display: none; }</style>
 
-::: {.wordmark-hero}
-portfólio
-:::
-
-::: {.wordmark-intro}
+::: {.projetos-hero}
+<p class="kicker">Portfólio</p>
+<h1>Projetos</h1>
 <p>Trabalho na interseção entre política educacional, gestão e dados — apoiando redes públicas de ensino com evidências para tomada de decisão.</p>
-<div class="areas">Gestão de projetos · Análise de indicadores<br>Avaliação de políticas · Visualização de dados</div>
 :::
 
 ::: {.projeto-faixa .faixa-1}
