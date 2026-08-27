@@ -16,7 +16,11 @@ execute:
   warning: false
 ---
 
+## Motivação
 
+Uma primeira etapa desta pesquisa cruzou o Saeb 2025 com o Censo Escolar 2025 pra testar se características do gestor escolar e infraestrutura da escola se associavam com proficiência, usando região como uma aproximação grosseira de nível socioeconômico. O achado foi honesto, mas modesto: só a rede Municipal sustentava alguma associação com rigor estatístico completo, e a limitação mais importante apontada naquele momento era a ausência de uma medida direta de nível socioeconômico.
+
+Antes de simplesmente tapar esse buraco, valeu parar e perguntar: por que focar só no gestor? O interesse original desta pesquisa sempre foi exploratório — descobrir algo, não confirmar uma hipótese fechada de antemão. Com o INSE 2023 (o Indicador de Nível Socioeconômico das Escolas, do Inep) disponível, fazia mais sentido montar uma triangulação completa das três bases — Saeb, Censo Escolar e INSE — e deixar a pergunta em aberto: dado o nível socioeconômico real de um município ou rede, o que mais explica a variação em proficiência, e quem foge do que o índice socioeconômico sozinho previa?
 
 ## Fontes de dados
 
