@@ -1,9 +1,13 @@
-/* Cores Vértice */
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;1,6..72,400&family=IBM+Plex+Sans:wght@400;500;600&display=swap');
+
 :root {
   --cor-terracota: #C0603A;
   --cor-slate: #4A6FA5;
   --cor-creme: #F5F0EA;
   --cor-grafite: #3A3A3A;
+  --cor-faixa-1: #F0E7DB;
+  --cor-faixa-2: #E9ECE6;
+  --cor-faixa-3: #EFE3E1;
 }
 
 /* Navbar */
@@ -11,11 +15,9 @@
   background-color: var(--cor-grafite) !important;
   border-bottom: 3px solid var(--cor-terracota);
 }
-
 .navbar-brand, .nav-link {
   color: white !important;
 }
-
 .nav-link:hover {
   color: var(--cor-terracota) !important;
 }
@@ -24,7 +26,6 @@
 h1, h2, h3 {
   color: var(--cor-grafite);
 }
-
 h2 {
   border-bottom: 2px solid var(--cor-terracota);
   padding-bottom: 6px;
@@ -34,7 +35,6 @@ h2 {
 a {
   color: var(--cor-slate);
 }
-
 a:hover {
   color: var(--cor-terracota);
 }
@@ -49,7 +49,121 @@ body {
 #TOC a {
   color: var(--cor-slate);
 }
-
 #TOC a:hover {
   color: var(--cor-terracota);
+}
+
+/* ===== Página de Projetos: wordmark + índice numerado ===== */
+
+.wordmark-hero {
+  font-family: 'Newsreader', Georgia, serif;
+  font-weight: 500;
+  font-size: 7rem;
+  line-height: 0.92;
+  letter-spacing: -0.02em;
+  color: var(--cor-grafite);
+  margin: 0.5rem 0 1.5rem;
+}
+@media (max-width: 768px) {
+  .wordmark-hero { font-size: 3.5rem; }
+}
+
+.wordmark-intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 2rem;
+  flex-wrap: wrap;
+  border-top: 1px solid var(--cor-grafite);
+  padding-top: 1.25rem;
+  margin-bottom: 3rem;
+}
+.wordmark-intro p {
+  max-width: 34rem;
+  font-size: 1rem;
+  line-height: 1.7;
+  margin: 0;
+}
+.wordmark-intro .areas {
+  font-size: 0.8rem;
+  color: #6b6559;
+  text-align: right;
+  line-height: 1.6;
+}
+
+.projeto-faixa {
+  border-top: 1px solid var(--cor-grafite);
+  padding: 3rem 0;
+}
+.projeto-faixa:last-of-type {
+  border-bottom: 1px solid var(--cor-grafite);
+}
+.projeto-faixa.faixa-1 { background-color: var(--cor-faixa-1); }
+.projeto-faixa.faixa-2 { background-color: var(--cor-faixa-2); }
+.projeto-faixa.faixa-3 { background-color: var(--cor-faixa-3); }
+
+.projeto-faixa-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.projeto-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 2rem;
+  font-size: 0.85rem;
+  color: #8a8377;
+}
+.projeto-meta .indice {
+  font-family: 'Newsreader', Georgia, serif;
+  font-size: 0.95rem;
+}
+
+.projeto-corpo {
+  display: flex;
+  gap: 3rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.projeto-titulo {
+  font-family: 'Newsreader', Georgia, serif;
+  font-weight: 500;
+  font-size: 1.85rem;
+  line-height: 1.2;
+  color: var(--cor-grafite);
+  max-width: 26rem;
+  flex-shrink: 0;
+  margin: 0;
+  border: none;
+  padding: 0;
+}
+.projeto-texto {
+  flex-grow: 1;
+  min-width: 260px;
+}
+.projeto-destaque {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #2f2b26;
+  margin: 0 0 0.75rem;
+  max-width: 38rem;
+}
+.projeto-ferramentas {
+  font-size: 0.8rem;
+  color: #8a8377;
+  margin: 0 0 1.1rem;
+}
+.projeto-link {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--cor-grafite) !important;
+  border-bottom: 1px solid var(--cor-grafite);
+  padding-bottom: 2px;
+  text-decoration: none;
+}
+.projeto-link:hover {
+  color: var(--cor-terracota) !important;
+  border-bottom-color: var(--cor-terracota);
 }
